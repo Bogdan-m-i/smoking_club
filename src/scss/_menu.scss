@@ -1,0 +1,19 @@
+.menu {
+	padding: 10px 0 120px;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		margin-bottom: 40px;
+
+		img {
+			transform: translateY(70px);
+			width: 188px;
+			height: 166px;
+		}
+	}
+
+	&__tabs {}
+}

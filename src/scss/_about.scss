@@ -1,0 +1,48 @@
+.about {
+	padding: 70px 0 100px;
+	color: $gray1;
+	
+	&__bottom {
+		display: flex;
+	}
+
+	&__bottom-item {
+		padding-top: 37px;
+		border-top: 1px solid $border-line;
+
+		h3 {
+			margin-bottom: 27px;
+		}
+
+		&:not(:last-of-type) {
+			margin-right: 65px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		h2 {
+			color: $dark;
+			margin-bottom: 36px;
+		}
+	}
+
+	&__top-item {
+		&:last-of-type {
+			width: 48%;
+			display: flex;
+			justify-content: flex-end;
+
+			img {
+				width: 453px;
+				height: 326px;
+			}
+		}
+		&:first-of-type {
+			width: 52%;
+		}
+	}
+}

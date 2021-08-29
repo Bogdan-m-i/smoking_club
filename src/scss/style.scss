@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+@import './var';
+@import './mixins/screen';
+@import './grid';
+@import './navbar';
+@import './main';
+@import './about';
+@import './slider';
+@import './menu';
+@import './tabs';
+@import './card';
+@import './adv';
+@import './news';
+@import './banner';
+@import './contacts';
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+p {
+    line-height: 26px;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+.section {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.section_main {
+    background-image: url('../img/bg-main.png');
+}
+
+.section_about,
+.section_menu,
+.section_adv,
+.section_news {
+    background-color: $light-bg;
+}
+
+.section_slider {
+    background-image: url('../img/bg-slider.png');
+}
+
+.section_banner {
+    background-image: url('../img/bg-banner.png');
+}
+
+.btn {
+    padding: 20px 30px;
+    border-radius: none;
+    border: none;
+    background: transparent;
+    color: $dark;
+    display: flex;
+    align-items: center;
+
+    &.btn_red {
+        background: $red;
+        color: $white;
+
+        &:hover {
+            background: $red-hover;
+        }
+    }
+
+    &.btn_dark {
+        background: $dark;
+        color: $white;
+
+        &:hover {
+            background: $dark-hover;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+
+    &__icon {
+        width: 26px;
+    }
+
+    &__content {
+		span {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.adv {
+	padding: 90px 0;
+	background: url('../img/adv.png') 0 center no-repeat;
+	
+
+	&__body {
+		li {
+			margin-bottom: 35px;
+			position: relative;
+			padding-left: 40px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: calc(50% - 13px);
+				width: 19px;
+				height: 27px;
+				background: url('../img/list-style.svg') center center no-repeat;
+			}
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__card {
+		width: calc(50% + 60px);
+		background: $dark;
+		color: $white;
+		padding: 60px 60px 80px;
+	}
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+}

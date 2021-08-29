@@ -1,0 +1,23 @@
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 100%;
+    // @include sm {
+    //     max-width: 540px;
+    // }
+    // @include md {
+    //     max-width: 720px;
+    // }
+    // @include lg {
+    //     max-width: 960px;
+    // }
+    @include xl {
+        max-width: 1240px;
+    }
+    // @include xxl {
+    //     max-width: 1320px;
+    // }
+}

@@ -1,0 +1,35 @@
+.tabs {
+	&__body {
+		padding-top: 50px;
+	}
+
+	&__body-item {
+		display: none;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+		margin: 0 -5px;
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__head {
+		border-bottom: 1px solid $border-line;
+		display: flex;
+	}
+
+	&__head-item {
+		display: block;
+		padding: 15px 20px;
+		font-weight: bold;
+		font-size: 18px;
+		transform: translateY(1px);
+
+		&.active {
+			background: $red;
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 65px 0;
+
+	&__btn {
+		.las {
+			font-size: 1.2rem;
+			transform: translate(5px, 1.5px);
+		}
+	}
+
+	&__content {
+		max-width: 685px;
+
+		h2 {
+			margin-bottom: 20px;
+			color: $white;
+			font-size: 24px;
+		}
+		p {
+			color: $light;
+			font-size: 18px;
+		}
+	}
+}
